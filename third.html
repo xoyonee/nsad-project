@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSAD*</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/h_f.css">
+    <link rel="stylesheet" href="css/third.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/lode_data.js"></script>
+    <script defer src="js/h_f.js"></script>
+    <script defer src="js/third.js"></script>
+
+</head>
+
+<body>
+    <div id="btn_top">TOP</div>
+    <div class="wrap">
+        <header class="flex_container">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/logo.png" alt="NSAD*">
+                </div>
+            </a>
+            <ul class="gnb_menu_box show_at_lg">
+                <li class="menu"><a href="second.html?cate_no=0">SHOP</a></li>
+                <li class="menu"><a href="second.html?cate_no=3">LOOKBOOK</a></li>
+                <li class="menu"><a href="second.html?cate_no=2">EVENT</a></li>
+                <li class="menu"><a href="second.html?cate_no=1">SPECIAL</a></li>
+            </ul>
+            <div class="user_util_box flex_container">
+                <img class="header_icon" src="img/header_search_icon.png" alt="검색" title="검색">
+                <img class="header_icon" src="img/header_cart_icon.png" alt="장바구니">
+                <img class="header_icon" src="img/header_mypage_icon.png" alt="마이페이지">
+            </div>
+            <!-- <div class="seach_pan"></div> -->
+            <nav class="show_at_sm">
+                <div id="bugger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div id="bugger_pan">
+                    <div class="head_close flex_container">
+                        <div class="btn_home"><a href="index.html">HOME</a></div>
+                        <div class="btn_close">
+                            <div class="close_line"></div>
+                            <div class="close_line"></div>
+                        </div>
+                    </div>
+                    <div class="bugger_icon flex_container">
+                        <div class="icon_box">
+                            <img class="header_icon" src="img/header_search_icon.png" alt="검색" title="검색">
+                            <div>검색하기</div>
+                        </div>
+                        <div class="icon_box">
+                            <img class="header_icon" src="img/header_cart_icon.png" alt="장바구니">
+                            <div>장바구니</div>
+                        </div>
+                        <div class="icon_box">
+                            <img class="header_icon" src="img/header_mypage_icon.png" alt="마이페이지">
+                            <div>마이페이지</div>
+                        </div>
+                    </div>
+                    <ul class="bugger_menu">
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=0" class="flex_container">
+                                <div class="menu_name">SHOP</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow">
+                                    <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                        style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=3" class="flex_container">
+                                <div class="menu_name">LOOKBOOK</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow">
+                                    <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                        style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=2" class="flex_container">
+                                <div class="menu_name">EVENT</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow">
+                                    <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                        style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=1" class="flex_container">
+                                <div class="menu_name">SPECIAL</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow">
+                                    <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                        style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="contents_area" class="flex_container">
+                <div id="detail">
+                    <div class="flex_container">
+                        <div class="swiper mySwiper detail_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d_banner"></div>
+                                <div class="swiper-slide d_banner"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div id="side_b" class="swiper mySwiper side_b">
+                            <div class="swiper-wrapper side_wrap">
+                                <div class="front swiper-slide"></div>
+                                <div class="back swiper-slide"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <section id="d_menu">
+                        <ul class="detail_menu flex_container">
+                            <li class="menu_in"><a href="#d_product">상품정보</a></li>
+                            <li class="menu_in"><a href="#d_guide">배송/교환/반품</a></li>
+                            <li class="menu_in"><a href="#d_review">상품리뷰</a></li>
+                            <li class="menu_in"><a href="#d_qna">상품문의</a></li>
+                        </ul>
+                    </section>
+                    <section id="d_product">
+                        <img src="img/product/h.jpg" alt="상세이미지">
+                        <img src="img/product/m.jpg" alt="상세이미지">
+                        <img src="img/product/f.jpg" alt="상세이미지">
+                    </section>
+                    <section id="d_guide">
+                        <img src="img/product/pay_info.jpg" alt="배송관련가이드">
+                    </section>
+                    <section id="d_review">
+                        <div class="detail_box">
+                            <div class="write_txt">게시물이 없습니다</div>
+                            <div class="write_btn">
+                                <div class="write_btn_in">글쓰기</div>
+                                <div class="write_btn_in">목록보기</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="d_qna">
+                        <div class="detail_box">
+                            <div class="write_txt">게시물이 없습니다</div>
+                            <div class="write_btn">
+                                <div class="write_btn_in">글쓰기</div>
+                                <div class="write_btn_in">목록보기</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="op">
+                </div>
+                <div class="btn_buy_container_fixd">
+                    <div id="btn_slider">BUY NOW</div>
+                    <div id="btn_cart">ADD TO CART</div>
+                    <div id="btn_wish">WISH LIST</div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="f__area">
+                <div class="head_f flex_container">
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>FIND A STORE</div>
+                            <span>매장안내</span>
+                        </div>
+                    </div>
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>TEAM WEAR</div>
+                            <span>팀 / 단체복 구매</span>
+                        </div>
+                    </div>
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>MEMBER JOIN</div>
+                            <span>회원가입</span>
+                        </div>
+                    </div>
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>DOWNLOAD APP</div>
+                            <span>App 다운로드</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body_f">
+                <div class="f__left">
+                    <div class="f_logo">
+                        <img src="img/about.png" alt="NSAD">
+                    </div>
+                    <ul class="fnb">
+                        <li>ABOUT US</li>
+                        <li>TERMS</li>
+                        <li>PRIVACY POLICY</li>
+                        <li>CUSTOMER SERVICE</li>
+                    </ul>
+                    <div class="fo_info">
+                        COMPANY : 케이투코리아(주) I 대표 : 정영훈<br>
+                        서울특별시 강남구 자곡로 174-14, 901호(자곡동) I 02-1644-7781(유료) I 080-468-7782 (수신자부담)<br>
+                        사업자등록번호 : 137-81-14921 I 통신판매업신고번호 : 제2019-서울강남-02482호
+                    </div>
+                    <div class="fo_copyright">
+                        COPYRIGHT © 2020. ALL RIGHTS RESERVED
+                    </div>
+                </div>
+                <div class="f__right">
+                    <div class="fo_follow">
+                        <div>FOLLOW US !</div>
+                        <img src="img/insta.png" alt="인스타그램">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var side_b = new Swiper('.side_b', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+
+
+        var swiper = new Swiper(".detail_swiper", {
+            slidesPerView: 1,
+            spaceBetween: 100,
+            speed: 1000,
+            loop: true,
+            // loopAdditionalSlides : 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: side_b
+            },
+        });
+    </script>
+</body>
+
+</html>

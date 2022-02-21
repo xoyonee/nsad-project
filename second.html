@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSAD*</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/h_f.css">
+    <link rel="stylesheet" href="css/second.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+
+    <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="js/h_f.js"></script>
+    <script defer src="js/lode_data.js"></script>
+    <script defer src="js/second.js"></script>
+
+</head>
+
+<body>
+    <div id="btn_top">TOP</div>
+    <div class="wrap">
+        <header class="flex_container">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/logo.png" alt="NSAD*">
+                </div>
+            </a>
+            <ul class="gnb_menu_box show_at_lg">
+                <li class="menu"><a href="second.html?cate_no=0">SHOP</a></li>
+                <li class="menu"><a href="second.html?cate_no=3">LOOKBOOK</a></li>
+                <li class="menu"><a href="second.html?cate_no=2">EVENT</a></li>
+                <li class="menu"><a href="second.html?cate_no=1">SPECIAL</a></li>
+            </ul>
+            <div class="user_util_box flex_container">
+                <img class="header_icon" src="img/header_search_icon.png" alt="검색" title="검색">
+                <img class="header_icon" src="img/header_cart_icon.png" alt="장바구니">
+                <img class="header_icon" src="img/header_mypage_icon.png" alt="마이페이지">
+            </div>
+            <!-- <div class="seach_pan"></div> -->
+            <nav class="show_at_sm">
+                <div id="bugger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div id="bugger_pan">
+                    <div class="head_close flex_container">
+                        <div class="btn_home"><a href="index.html">HOME</a></div>
+                        <div class="btn_close">
+                            <div class="close_line"></div>
+                            <div class="close_line"></div>
+                        </div>
+                    </div>
+                    <div class="bugger_icon flex_container">
+                        <div class="icon_box">
+                            <img class="header_icon" src="img/header_search_icon.png" alt="검색" title="검색">
+                            <div>검색하기</div>
+                        </div>
+                        <div class="icon_box">
+                            <img class="header_icon" src="img/header_cart_icon.png" alt="장바구니">
+                            <div>장바구니</div>
+                        </div>
+                        <div class="icon_box">
+                            <img class="header_icon" src="img/header_mypage_icon.png" alt="마이페이지">
+                            <div>마이페이지</div>
+                        </div>
+                    </div>
+                    <ul class="bugger_menu">
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=0" class="flex_container">
+                                <div class="menu_name">SHOP</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow">
+                                    <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                        style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=3" class="flex_container">
+                                <div class="menu_name">LOOKBOOK</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow">
+                                    <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                        style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=2" class="flex_container">
+                                <div class="menu_name">EVENT</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow">
+                                    <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                        style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=1" class="flex_container">
+                                <div class="menu_name">SPECIAL</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow">
+                                    <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                        style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="main_title" class="show_at_lg">
+            </section>
+            <section class="contents_box flex_container">
+                <div class="side_menu">
+                    <div class="btn_m show_at_sm">
+                        <div id="btn_mm">
+                            <span id="btn_mmt"></span>
+                            <span id="btn_mms">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" id="btn_mmr">
+                                    <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                        style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="menu_box">
+                        <div id="menu_in">
+                            <ul class="item_sec">
+                                <li class="item_title">
+                                    <a href="second.html?cate_no=0">
+                                        <div class="title_txt">
+                                            NEW COLLECTION
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33"
+                                                class="btn_mt show_at_sm">
+                                                <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                                    style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="btn_list_box">
+                                        <li class="btn_list"><a href="second.html?cate_no=0">ALL</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=2">OUTERS</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=1">TOPS</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=3">BOTTOMS</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=4">ACC</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="item_sec">
+                                <li class="item_title">
+                                    <a href="second.html?cate_no=2">
+                                        <div class="title_txt">
+                                            OUTERS
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33"
+                                                class="btn_mt show_at_sm">
+                                                <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                                    style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="btn_list_box">
+                                        <li class="btn_list"><a href="second.html?cate_no=0">ALL</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=2">TRACK SUIT</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=1">JACKETS</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=3">DOWN</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="item_sec">
+                                <li class="item_title">
+                                    <a href="second.html?cate_no=3">
+                                        <div class="title_txt">
+                                            TOPS
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33"
+                                                class="btn_mt show_at_sm">
+                                                <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                                    style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="btn_list_box">
+                                        <li class="btn_list"><a href="second.html?cate_no=0">ALL</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=2">TRACK SUIT</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="item_sec">
+                                <li class="item_title">
+                                    <a href="second.html?cate_no=1">
+                                        <div class="title_txt">
+                                            BOTTOMS
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33"
+                                                class="btn_mt show_at_sm">
+                                                <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                                    style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="btn_list_box">
+                                        <li class="btn_list"><a href="second.html?cate_no=0">ALL</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=3">TRACK SUIT</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=2">JOGGER</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="item_sec">
+                                <li class="item_title">
+                                    <a href="second.html?cate_no=4">
+                                        <div class="title_txt">
+                                            ACC
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33"
+                                                class="btn_mt show_at_sm">
+                                                <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                                    style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="btn_list_box">
+                                        <li class="btn_list"><a href="second.html?cate_no=4">ALL</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=4">BAG</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=4">SOCKS</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=4">CAP</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=4">ETC</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="item_sec">
+                                <li class="item_title">
+                                    <a href="second.html?cate_no=5">
+                                        <div class="title_txt">
+                                            OUTLET
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33"
+                                                class="btn_mt show_at_sm">
+                                                <polyline points="1.24 1 7.79 7.55 1 14.34"
+                                                    style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="btn_list_box">
+                                        <li class="btn_list"><a href="second.html?cate_no=0">ALL</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=2">OUTERS</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=3">TOPS</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=4">BOTTOMS</a></li>
+                                        <li class="btn_list"><a href="second.html?cate_no=5">ACC</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="items_list">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="f__area">
+                <div class="head_f flex_container">
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>FIND A STORE</div>
+                            <span>매장안내</span>
+                        </div>
+                    </div>
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>TEAM WEAR</div>
+                            <span>팀 / 단체복 구매</span>
+                        </div>
+                    </div>
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>MEMBER JOIN</div>
+                            <span>회원가입</span>
+                        </div>
+                    </div>
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>DOWNLOAD APP</div>
+                            <span>App 다운로드</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body_f">
+                <div class="f__left">
+                    <div class="f_logo">
+                        <img src="img/about.png" alt="NSAD">
+                    </div>
+                    <ul class="fnb">
+                        <li>ABOUT US</li>
+                        <li>TERMS</li>
+                        <li>PRIVACY POLICY</li>
+                        <li>CUSTOMER SERVICE</li>
+                    </ul>
+                    <div class="fo_info">
+                        COMPANY : 케이투코리아(주) I 대표 : 정영훈<br>
+                        서울특별시 강남구 자곡로 174-14, 901호(자곡동) I 02-1644-7781(유료) I 080-468-7782 (수신자부담)<br>
+                        사업자등록번호 : 137-81-14921 I 통신판매업신고번호 : 제2019-서울강남-02482호
+                    </div>
+                    <div class="fo_copyright">
+                        COPYRIGHT © 2020. ALL RIGHTS RESERVED
+                    </div>
+                </div>
+                <div class="f__right">
+                    <div class="fo_follow">
+                        <div>FOLLOW US !</div>
+                        <img src="img/insta.png" alt="인스타그램">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
