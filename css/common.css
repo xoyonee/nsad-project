@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "GmarketSansBold" !important;
+  background-color: #fff !important;
+  position: relative;
+  text-align: center;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li,
+svg,
+.header_icon,
+.indi {
+  cursor: pointer;
+}
+.w_size {
+  /* min-width: 1200px; */
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.img_box {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+img {
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+}
+.flex_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec {
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+.title {
+  margin: 3% auto;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 4px;
+
+  transform: translateX(-150%);
+  transition: all 0.5s;
+}
+.title::after {
+  content: "";
+  float: left;
+  margin-top: 7px;
+  margin-right: 15px;
+  width: 7px;
+  height: 23px;
+
+  background-color: #000;
+}
+.event_area .title::after {
+  height: 23px;
+  margin-top: 1px;
+}
+.title_active {
+  transform: translateX(0);
+}
+.indi_box {
+  text-align: center;
+  position: relative;
+}
+.indi {
+  width: 8px;
+  height: 8px;
+  margin: 15px 0;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #aaa;
+}
+.btn_buy {
+  width: 80px;
+  height: 25px;
+  color: #003594;
+  font-size: 13px;
+  font-weight: 900;
+  font-family: "Pretendard-Regular";
+  cursor: pointer;
+
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn_buy:hover {
+  color: #000;
+  background-color: #fff;
+}
+.pc_none {
+  display: none;
+}
+#btn_top {
+  width: 60px;
+  height: 60px;
+  line-height: 65px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#btn_top:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.show_at_lg {
+  display: block !important;
+}
+.show_at_sm {
+  display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  /* 데스크탑용 */
+  .pc_none {
+    display: block;
+  }
+  .sec {
+    padding: 0 20px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .indi {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .show_at_lg {
+    display: none !important;
+  }
+  .show_at_sm {
+    display: block !important;
+  }
+
+  .btn_buy {
+    bottom: -33px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 16px;
+  }
+  .title::after {
+    margin-top: 2px;
+    height: 20px;
+  }
+  .event_area .title::after {
+    height: 20px;
+    margin-top: -1px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    font-size: 12px;
+  }
+  .title::after {
+    height: 16px;
+    width: 4px;
+  }
+  .event_area .title::after {
+    height: 14px;
+  }
+}

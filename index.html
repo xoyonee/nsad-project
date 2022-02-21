@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSAD*</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/h_f.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    
+    <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/h_f.js"></script>
+    <script defer src="js/index.js"></script>
+    
+</head>
+<body>
+    <div id="btn_top">TOP</div>
+    <div class="wrap">
+        <header class="flex_container">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/logo.png" alt="NSAD*">
+                </div>
+            </a>
+            <ul class="gnb_menu_box show_at_lg">
+                <li class="menu"><a href="second.html?cate_no=0">SHOP</a></li>
+                <li class="menu"><a href="second.html?cate_no=3">LOOKBOOK</a></li>
+                <li class="menu"><a href="second.html?cate_no=2">EVENT</a></li>
+                <li class="menu"><a href="second.html?cate_no=1">SPECIAL</a></li>
+            </ul>
+            <div class="user_util_box flex_container">
+                <img class="header_icon" src="img/header_search_icon_fff.png" alt="검색" title="검색">
+                <img class="header_icon" src="img/header_cart_icon_fff.png" alt="장바구니">
+                <img class="header_icon" src="img/header_mypage_icon_fff.png" alt="마이페이지">
+            </div>
+            <!-- <div class="seach_pan"></div> -->
+            <nav class="show_at_sm">
+                <div id="bugger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div id="bugger_pan">
+                    <div class="head_close flex_container">
+                        <div class="btn_home"><a href="index.html">HOME</a></div>
+                        <div class="btn_close">
+                            <div class="close_line"></div>
+                            <div class="close_line"></div>
+                        </div>
+                    </div>
+                    <div class="bugger_icon flex_container">
+                        <div class="icon_box">
+                            <img class="header_icon" src="img/header_search_icon.png" alt="검색" title="검색">
+                            <div>검색하기</div>
+                        </div>
+                        <div class="icon_box">
+                            <img class="header_icon" src="img/header_cart_icon.png" alt="장바구니">
+                            <div>장바구니</div>
+                        </div>
+                        <div class="icon_box">
+                            <img class="header_icon" src="img/header_mypage_icon.png" alt="마이페이지">
+                            <div>마이페이지</div>
+                        </div>
+                    </div>
+                    <ul class="bugger_menu">
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=0" class="flex_container">
+                                <div class="menu_name">SHOP</div> 
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow"><polyline points="1.24 1 7.79 7.55 1 14.34"  style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px"/></svg>
+                            </a>
+                        </li>
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=3" class="flex_container">
+                                <div class="menu_name">LOOKBOOK</div> 
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow"><polyline points="1.24 1 7.79 7.55 1 14.34"  style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px"/></svg>
+                            </a>
+                        </li>
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=2" class="flex_container">
+                                <div class="menu_name">EVENT</div> 
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow"><polyline points="1.24 1 7.79 7.55 1 14.34"  style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px"/></svg>
+                            </a>
+                        </li>
+                        <li class="bugger_inmenu">
+                            <a href="second.html?cate_no=1" class="flex_container">
+                                <div class="menu_name">SPECIAL</div> 
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="bug_menu_arrow"><polyline points="1.24 1 7.79 7.55 1 14.34"  style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="wheel main_banner">
+                <div class="banner banner1">
+                    <img class="show_at_sm" src="img/mb1.jpg" alt="">
+                </div>
+                <div class="banner banner2">
+                    <img class="show_at_sm" src="img/mb2.jpg" alt="">
+                </div>
+                <div class="banner banner3">
+                    <img class="show_at_sm" src="img/mb3.jpg" alt="">
+                </div>
+                <div class="arrow">
+                    <div class="btn_banner_arrow prev">
+                        PRVE
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="main_arrow"><polyline points="1.24 1 7.79 7.55 1 14.34" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px"/></svg>
+                    </div>
+                    <div class="btn_banner_arrow next">
+                        NEXT
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="main_arrow"><polyline points="1.24 1 7.79 7.55 1 14.34" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px"/></svg>
+                    </div>
+                    <div class="circle circle_prev"></div>
+                    <div class="circle circle_next"></div>
+                </div>
+                <div class="indi_box">
+                    <!-- <div class="indi"></div>
+                    <div class="indi"></div>
+                    <div class="indi"></div> -->
+                </div>
+                <div class="main_b_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33"><polyline points="1.24 1 7.79 7.55 1 14.34" class="main_icon" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px"/></svg>
+                </div>
+            </section>
+            <section class="wheel about_nsad w_size">
+                <div class="about_title">
+                    <img src="img/about.png" alt="NSAD">
+                </div>
+                <div class="about_info">
+                    <p>NSAD는 TECH기반의 STREET WEAR 브랜드 입니다.&nbsp;</p>
+                    <p>어떠한 조건도, 제약도 없는 자유로움을 지향하며,&nbsp;</p>
+                    <p>우리의 이런 가치를  NO STRINGS ATTACHED,</p>
+                    <p>NSAD라 부릅니다.</p>
+                </div>
+            </section>
+            <section class="sec look_book w_size">
+                <div class="title">LOOK BOOK</div>
+                <div class="look_book_box">
+                    <div class="look_book flex_container look_book_fw">
+                        <div class="look_book_list fw_2020">
+                                <a href="second.html?cate_no=0">
+                                <div class="img_box">
+                                    <img src="img/lookbook/2020_fw.jpg" alt="2021 F/W LOOKBOOK">
+                                    <div class="img_pan">
+                                        <div class="btn_circle">VIEW MORE</div>
+                                    </div>
+                                </div>
+                                <p>2020 F/W LOOKBOOK</p>
+                            </a>
+                        </div>
+                        <div class="look_book_list fw_2021">
+                            <a href="second.html?cate_no=3">
+                                <div class="img_box">
+                                    <img src="img/lookbook/2021_fw.png" alt="">
+                                    <div class="img_pan">
+                                        <div class="btn_circle">VIEW MORE</div>
+                                    </div>
+                                </div>
+                                <p>2021 S/S LOOKBOOK</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="look_book flex_container look_book_ss">
+                        <div class="look_book_list ss_2020">
+                            <a href="second.html?cate_no=2">
+                                <div class="img_box">
+                                    <img src="img/lookbook/2020_ss.jpg" alt="">
+                                    <div class="img_pan">
+                                        <div class="btn_circle">VIEW MORE</div>
+                                    </div>
+                                </div>
+                                <p>2021 F/W LOOKBOOK</p>
+                            </a>
+                        </div>
+                        <div class="look_book_list ss_2021">                            
+                            <a href="second.html?cate_no=1">
+                                <div class="img_box">
+                                    <img src="img/lookbook/2021_ss.jpg" alt="">
+                                    <div class="img_pan">
+                                        <div class="btn_circle">VIEW MORE</div>
+                                    </div>
+                                </div>
+                                <p>2021 S/S LOOKBOOK</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="special w_size show_at_lg">
+                <div class="img_box">
+                    <img src="img/special.jpg" alt="lookbook_2021_이미지">
+                </div>
+                <div class="special_txt">
+                    <div class="txt_box">
+                        <p>3일 동안 <span>NSAD*</span> 의</p>
+                        <p><span>가을 인기상품</span> 을 만나보세요.</p>
+                        <p class="event_date">2021.10.15 ~ 2021.10.17</p>
+                        <a href="second.html?cate_no=2"><div class="btn_more">자세히 보기</div></a>
+                        <!-- <div class="btn_more"><a href="second.html?cate_no=2">자세히 보기</a></div> -->
+                    </div>
+                </div>
+            </section>
+            <section class="event_area w_size">
+                <div class="title">EVENT</div>
+                <div class="event_box flex_container">
+                    <div class="side_box">
+                        <img src="img/event/event3.jpg" alt="event3">
+                        <!-- <div class="btn_more">이벤트 더보기</div> -->
+                    </div>
+                    <div class="best_area">
+                        <div class="best_slide">
+                            <div class="best_items flex_container">
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=0&item_no=2">
+                                        <img src="img/event/1.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">PRINTED PADDING ANORAK BLACK</p>
+                                                <span class="o__price">￦199,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=0&item_no=3">
+                                        <img src="img/event/2.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">PRINTED PADDING ANORAK PURPLE</p>
+                                                <span class="o__price">￦199,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=0&item_no=4">
+                                        <img src="img/event/3.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">CURLY FLEECE WOVENMIX JACKET BLACK</p>
+                                                <span class="o__price">￦179,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=0&item_no=5">
+                                        <img src="img/event/4.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">CURLY FLEECE WOVENMIX JACKET BROWN</p>
+                                                <span class="o__price">￦179,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                            </div>
+                            <div class="best_items flex_container">
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=2&item_no=1">
+                                        <img src="img/event/5.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">ESSENTIAL HOODIE BLACK</p>
+                                                <span class="o__price">￦139,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=2&item_no=2">
+                                        <img src="img/event/6.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">ESSENTIAL HOODIE GREY</p>
+                                                <span class="o__price">￦139,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=2&item_no=3">
+                                        <img src="img/event/7.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">ESSENTIAL SWEATSHIRT BLACK</p>
+                                                <span class="o__price">￦119,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=2&item_no=4">
+                                        <img src="img/event/8.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">ESSENTIAL SWEATSHIRT YELLOW</p>
+                                                <span class="o__price">￦119,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                            </div>
+                            <div class="best_items flex_container">
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=3&item_no=4">
+                                        <img src="img/event/9.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">NOX GARMENT DYED PANTS KHAKI</p>
+                                                <span class="o__price">￦199,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=3&item_no=5">
+                                        <img src="img/event/10.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">AGILE GARMENT DYED PANTS BLACK</p>
+                                                <span class="o__price">￦199,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=3&item_no=6">
+                                        <img src="img/event/11.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">AGILE GARMENT DYED PANTS GREY</p>
+                                                <span class="o__price">￦199,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                                <div class="item_box">
+                                    <a href="third.html?cate_no=3&item_no=7">
+                                        <img src="img/event/12.jpg" alt="">
+                                        <div class="item_info">
+                                            <div class="info_txt">
+                                                <p class="item_name">NSAD* ESSENTIAL SWEAT PANTS BLACK</p>
+                                                <span class="o__price">￦119,000</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="btn_buy pc_none">구매하기</div>
+                                </div>
+                            </div>
+                            <div class="arrow">
+                                <div class="btn_event_arrow prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33"><polyline points="1.24 1 7.79 7.55 1 14.34" class="btn_event_icon" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px"/></svg>
+                                </div>
+                                <div class="btn_event_arrow next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33"><polyline points="1.24 1 7.79 7.55 1 14.34" class="btn_event_icon" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indi_box"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="special w_size show_at_sm">
+                <div class="img_box">
+                    <img src="img/special.jpg" alt="lookbook_2021_이미지">
+                </div>
+                <div class="special_txt">
+                    <div class="txt_box">
+                        <p>3일 동안 <span>NSAD*</span> 의</p>
+                        <p><span>가을 인기상품</span> 을 만나보세요.</p>
+                        <p class="event_date">2021.10.15 ~ 2021.10.17</p>
+                        <!-- <div class="btn_more">자세히 보기</div> -->
+                        <a href="second.html?cate_no=2"><div class="btn_more">자세히 보기</div></a>
+                    </div>
+                </div>
+            </section>
+            <section class="sec new_collection w_size">
+                <div class="title">NEW COLLECTION</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide item">
+                          <a class="item_a" href="third.html?cate_no=0&item_no=1">
+                              <img src="img/new/new_item1.jpg" alt="">
+                              <div class="item_info hover_none">
+                                  <p class="item_name">BLADE TRACK JACKET BLACK</p>
+                                  <span class="o__price">￦239,000</span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="swiper-slide item">
+                          <a class="item_a" href="third.html?cate_no=0&item_no=3">
+                              <img src="img/new/new_item2.jpg" alt="">
+                              <div class="item_info hover_none">
+                                  <p class="item_name">PRINTED PADDING ANORAK PURPLE</p>
+                                  <span class="o__price">￦199,000</span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="swiper-slide item">
+                          <a class="item_a" href="third.html?cate_no=0&item_no=10">
+                              <img src="img/new/new_item3.jpg" alt="">
+                              <div class="item_info hover_none">
+                                  <p class="item_name">UTILITY TRACK JACKET GREY</p>
+                                  <span class="o__price">￦199,000</span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="swiper-slide item">
+                          <a class="item_a" href="third.html?cate_no=0&item_no=5">
+                              <img src="img/new/new_item4.jpg" alt="">
+                              <div class="item_info hover_none">
+                                  <p class="item_name">CURLY FLEECE WOVENMIX JACKET BROWN</p>
+                                  <span class="o__price">￦179,000</span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="swiper-slide item">
+                          <a class="item_a" href="third.html?cate_no=0&item_no=8">
+                              <img src="img/new/new_item5.jpg" alt="">
+                              <div class="item_info hover_none">
+                                  <p class="item_name">CURLY FLEECE ANORAK GREY</p>
+                                  <span class="o__price">￦159,000</span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="swiper-slide item">
+                          <a class="item_a" href="third.html?cate_no=0&item_no=6">
+                              <img src="img/new/new_item6.jpg" alt="">
+                              <div class="item_info hover_none">
+                                  <p class="item_name">CURLY FLEECE WOVENMIX JACKET GREY</p>
+                                  <span class="o__price">￦179,000</span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="swiper-slide item">
+                          <a class="item_a" href="third.html?cate_no=0&item_no=2">
+                              <img src="img/new/new_item7.jpg" alt="">
+                              <div class="item_info hover_none">
+                                  <p class="item_name">PRINTED PADDING ANORAK BLACK</p>
+                                  <span class="o__price">￦199,000</span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="swiper-slide item">
+                          <a class="item_a" href="third.html?cate_no=0&item_no=9">
+                              <img src="img/new/new_item8.jpg" alt="">
+                              <div class="item_info hover_none">
+                                  <p class="item_name">UTILITY TRACK JACKET BLACK</p>
+                                  <span class="o__price">￦199,000</span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="swiper-slide item">
+                          <a class="item_a" href="third.html?cate_no=0&item_no=7">
+                              <img src="img/new/new_item9.jpg" alt="">
+                              <div class="item_info hover_none">
+                                  <p class="item_name">CURLY FLEECE ANORAK BLACK</p>
+                                  <span class="o__price">￦159,000</span>
+                              </div>
+                          </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="btn_new_arrow btn_next">
+                    NEXT
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="btn_new_icon show_at_sm"><polyline points="1.24 1 7.79 7.55 1 14.34"  style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/></svg>
+                </div>
+                <div class="btn_new_arrow btn_prev">
+                    PREV
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.79 15.33" class="btn_new_icon show_at_sm"><polyline points="1.24 1 7.79 7.55 1 14.34"  style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/></svg>
+                </div>
+                <div class="swiper-pagination"></div>
+            </section>
+        </main>
+        <footer>
+            <div class="f__area">
+                <div class="head_f flex_container">
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>FIND A STORE</div>
+                            <span>매장안내</span>
+                        </div>
+                    </div>
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>TEAM WEAR</div>
+                            <span>팀 / 단체복 구매</span>
+                        </div>
+                    </div>
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>MEMBER JOIN</div>
+                            <span>회원가입</span>
+                        </div>
+                    </div>
+                    <div class="f__box flex_container">
+                        <div class="f__txt_box">
+                            <div>DOWNLOAD APP</div>
+                            <span>App 다운로드</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body_f">
+                <div class="f__left">
+                    <div class="f_logo">
+                       <img src="img/about.png" alt="NSAD">
+                    </div> 
+                    <ul class="fnb">
+                        <li>ABOUT US</li>
+                        <li>TERMS</li>
+                        <li>PRIVACY POLICY</li>
+                        <li>CUSTOMER SERVICE</li>	
+                    </ul>
+                    <div class="fo_info">
+                        COMPANY : 케이투코리아(주) I 대표 : 정영훈<br>
+                        서울특별시 강남구 자곡로 174-14, 901호(자곡동) I 02-1644-7781(유료) I 080-468-7782 (수신자부담)<br>
+                        사업자등록번호 : 137-81-14921 I 통신판매업신고번호 : 제2019-서울강남-02482호
+                    </div>
+                    <div class="fo_copyright">
+                        COPYRIGHT © 2020. ALL RIGHTS RESERVED
+                    </div>
+                </div>
+                <div class="f__right">
+                    <div class="fo_follow">
+                        <div>FOLLOW US !</div>
+                        <img src="img/insta.png" alt="인스타그램">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script>
+    
+        var swiper = new Swiper(".mySwiper", {
+            breakpoints: { 
+                1024: { 
+                    slidesPerView: 3, 
+                    spaceBetween: 30,
+                    slidesPerGroup: 3,
+                }, 
+                480: { 
+                    slidesPerView: 2, 
+                    spaceBetween: 30,
+                    slidesPerGroup: 2,
+                }, 
+                280: { 
+                    slidesPerView: 1, 
+                    spaceBetween: 0,
+                    slidesPerGroup: 1,
+                }
+            },
+            loop: true,
+            loopFillGroupWithBlank: true,
+            speed: 1000,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".btn_next",
+                prevEl: ".btn_prev",
+            },
+        });
+    
+    </script>
+</body>
+</html>
