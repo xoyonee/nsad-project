@@ -5,8 +5,7 @@
 >
 > ###  📝 프로젝트 설명 📝
 >
-
-
+<br/>
   ❇ NSAD(엔에스에이디) 홈페이지를 pc, 태블릿, 모바일에 맞춰 반응형으로 리뉴얼한 프로젝트입니다.
   
   
@@ -19,10 +18,7 @@
 >
 > ###  📝 기능 설명 📝
 > 
-
-
-
-
+<br/>
   ✅ 메인 홈페이지 - 이미지 슬라이드 횡 스크롤 아래로 이동
   
   
@@ -41,9 +37,7 @@
 >
 > ###  🛠 Tech Stack 🛠
 >
-
-
-
+<br/>
 <p>
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
