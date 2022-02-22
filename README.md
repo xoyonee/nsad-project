@@ -21,19 +21,30 @@
 
 
   ✅ 메인 홈페이지 - 이미지 슬라이드 횡 스크롤 아래로 이동
+  
+  
   ✅ 카테고리 페이지 - 아이템 배열 애니메이션
+  
+  
   ✅ 프로덕트 페이지 - 상품 추가 후 총액 계산
+  
+  
   ✅ 페이지 상단으로 이동 가능한 탑 버튼
+  
+  
   ✅ swiper를 이용한 이미지 슬라이드
+ 
  
 >
 > ###  🛠 Tech Stack 🛠
 >
 
+
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  
   <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javaScipt&logoColor=black"/>
+  
   <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
   
-
-<br/>
